@@ -157,8 +157,8 @@ const myApiDocumentationParser = entrypoint => parseHydraDocumentation(entrypoin
               />
             );
 
-            field.inputComponent = (
-              <ImageInput accept="image/*" key={field.name} multiple={false} source={field.name}>
+            field.input =  props => (
+              <ImageInput {...props} accept="image/*" key={field.name} multiple={false} source={field.name}>
                 <ImageField source="src"/>
               </ImageInput>
             );
